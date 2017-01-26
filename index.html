@@ -13,9 +13,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <style>
-      .mdl-layout-title a {text-decoration: none} /* Remove the underline from the home link in the header */
-      .material-icons.md-72 { font-size: 72px; }
+      .mdl-layout__header {background-color: rgb(230, 230, 230)} /* Override the color for the header */
+
+      /* shape the links: no underline by default, underline on hover */
+      a {text-decoration: none}
+      a:hover {text-decoration: underline}
+
+      /* fine-tunings for the home page */
       .center { text-align: center; }
+      .material-icons.md-72 { font-size: 72px; }
       a i { transition: transform 0.1s;}
       a i:hover { transform: translate(2px, -2px); opacity: 0.9}
       .vertical-spacer { margin-bottom: 50px}
